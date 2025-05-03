@@ -1,0 +1,21 @@
+{
+  "name": "tp01",
+  "version": "1.0.0",
+  "description": "travail pratique 1 gestion api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "\"api\""
+  ],
+  "author": "ledeur mathieu",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "request": "^2.88.2"
+  }
+}
