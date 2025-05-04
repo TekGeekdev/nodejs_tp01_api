@@ -33,6 +33,15 @@ app.get('/scrapping/movie/:id', (req,res)=>{
 })
 })
 
+app.get('/data/:id' , (req, res)=>{
+    const filePath = `${__dirname}/data/${req.params.id}.json`
+    console.log(filePath)
+    fs.readFile(filePath, 'utf8', (err, data) => {
+        if (err) return res.status(404).send({error: 'Data not found'});
+        res.json(JSON.parse(data))
+    })
+})
+
 const PORT = config.PORT
 app.listen(PORT, () =>{
     console.log(`server running on port ${PORT}`)
