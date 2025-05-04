@@ -2,11 +2,11 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Test Tailwind + DaisyUI</title>
+  <title>Show Movie</title>
   <link href="output.css" rel="stylesheet">
   <script type="module" src="script.js"></script>
 </head>
-<body>
+<body class="bg-slate-100 flex flex-col h-screen">
     <div class="navbar bg-base-100 shadow-sm">
         <div class="navbar-start">
           <div class="dropdown">
@@ -18,11 +18,11 @@
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
               <li><a>Popular</a></li>
               <li>
-                <a>Parent</a>
+                <a>Category</a>
                 <ul class="p-2">
                   <li><a>Action</a></li>
-                  <li><a>Comedy</a></li>
-                  <li><a>Comedy</a></li>
+                  <li><a>Aventure</a></li>
+                  <li><a>Romance</a></li>
                   <li><a>Comedy</a></li>
                 </ul>
               </li>
@@ -33,17 +33,19 @@
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
+            <li><a>Popular</a></li>
             <li>
               <details>
-                <summary>Parent</summary>
+                <summary>Category</summary>
                 <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
+                    <li><a>Action</a></li>
+                    <li><a>Aventure</a></li>
+                    <li><a>Romance</a></li>
+                    <li><a>Comedy</a></li>
                 </ul>
               </details>
             </li>
-            <li><a>Item 3</a></li>
+            <li><a>In coming</a></li>
           </ul>
         </div>
         <div class="navbar-end">
@@ -53,56 +55,56 @@
               </button>
         </div>
       </div>
-      <main class="me-auto ms-auto max-w-6xl mt-20">
-        <div class="content flex gap-x-32 ">
-            <section>
-                <h1 id="titleMovie">test</h1>
+      <main class="me-auto ms-auto max-w-7xl mt-20 grow">
+        <div class="content flex gap-24 flex-col items-center md:flex-row md:items-start">
+            <section class="rounded-md border-transparent shadow-2xl shadow-cyan-500/50 p-3">
+                <h1 id="titleMovie" class="text-4xl divide-x">test</h1>
                 <article>
-                    <h2>Movie info</h2>
-                    <div class="flex gap-3">
-                        <p>Resume :</p>
-                        <p id="movieResume">no data</p>
+                    <h2 class="text-2xl mt-12 underline">Movie info</h2>
+                    <div class="flex gap-3 mt-4">
+                        <p class="max-w-full">Resume:</p>
+                        <p id="movieResume" class="max-w-prose">no data</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 mt-3">
                         <p>Origin country :</p>
                         <p id="movieCountry">no data</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 mt-3">
                         <p>Date release :</p>
                         <p id="dateRelase">no data</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 items-center mt-3">
                         <p>Homepage :</p>
-                        <a id="movieLink" href="">Link</a>
+                        <a id="movieLink" class="btn btn-primary" href="">Link</a>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 mt-3">
                         <p>Runtime :</p>
                         <p id="movieRuntime">no data</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 mt-3">
                         <p>Popularity score :</p>
                         <p id="moviePopularity">no data</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 mt-3">
                         <p>Budget :</p>
                         <p id="movieBudget">no data</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 mt-3">
                         <p>Income :</p>
                         <p id="movieIncone">no data</p>
                     </div>
                 </article>
-                <article>
-                    <h2>Production compagny</h2>
-                    <div class="flex gap-3">
+                <article class="mt-8">
+                    <h2 class="text-2xl underline">Production compagny</h2>
+                    <div class="flex gap-3 mt-4">
                         <p>Name :</p>
                         <p id="compagnyName">no data</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 mt-3">
                         <p>Country :</p>
                         <p id="compagnyCountry">no data</p>
                     </div>
-                    <img id="compagnyImg" src="" alt="img compagny production">
+                    
                 </article>
             </section>
             <aside class="order-first">
