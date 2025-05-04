@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Tailwind + DaisyUI</title>
+  <link href="output.css" rel="stylesheet">
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+              <li><a>Popular</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Action</a></li>
+                  <li><a>Comedy</a></li>
+                  <li><a>Comedy</a></li>
+                  <li><a>Comedy</a></li>
+                </ul>
+              </li>
+              <li><a>In coming</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">Application Movies</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
+            <li>
+              <details>
+                <summary>Parent</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+            <button class="btn bg-white text-black border-[#e5e5e5]">
+                <svg aria-label="Google logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g><path d="m0 0H512V512H0" fill="#fff"></path><path fill="#34a853" d="M153 292c30 82 118 95 171 60h62v48A192 192 0 0190 341"></path><path fill="#4285f4" d="m386 400a140 175 0 0053-179H260v74h102q-7 37-38 57"></path><path fill="#fbbc02" d="m90 341a208 200 0 010-171l63 49q-12 37 0 73"></path><path fill="#ea4335" d="m153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55"></path></g></svg>
+                Login with Google
+              </button>
+        </div>
+      </div>
+      <main class="me-auto ms-auto max-w-6xl mt-20">
+        <div class="content flex gap-x-32 ">
+            <section>
+                <h1 id="titleMovie">test</h1>
+                <article>
+                    <h2>Movie info</h2>
+                    <div class="flex gap-3">
+                        <p>Resume :</p>
+                        <p id="movieResume">no data</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <p>Origin country :</p>
+                        <p id="movieCountry">no data</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <p>Date release :</p>
+                        <p id="dateRelase">no data</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <p>Homepage :</p>
+                        <a id="movieLink" href="">Link</a>
+                    </div>
+                    <div class="flex gap-3">
+                        <p>Runtime :</p>
+                        <p id="movieRuntime">no data</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <p>Popularity score :</p>
+                        <p id="moviePopularity">no data</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <p>Budget :</p>
+                        <p id="movieBudget">no data</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <p>Income :</p>
+                        <p id="movieIncone">no data</p>
+                    </div>
+                </article>
+                <article>
+                    <h2>Production compagny</h2>
+                    <div class="flex gap-3">
+                        <p>Name :</p>
+                        <p id="compagnyName">no data</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <p>Country :</p>
+                        <p id="compagnyCountry">no data</p>
+                    </div>
+                    <img id="compagnyImg" src="" alt="img compagny production">
+                </article>
+            </section>
+            <aside class="order-first">
+                <img id="imgMovie" src="" alt="image d'un film">
+            </aside>
+        </div>
+      </main>
+      <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 mt-20">
+        <nav>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+          <h6 class="footer-title">Newsletter</h6>
+          <fieldset class="w-80">
+            <label>Enter your email address</label>
+            <div class="join">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="input input-bordered join-item" />
+              <button class="btn btn-primary join-item">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
+      </footer>
+      
+</body>
+</html>

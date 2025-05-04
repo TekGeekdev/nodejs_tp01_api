@@ -17,5 +17,9 @@
     "express": "^5.1.0",
     "nodemon": "^3.1.10",
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "daisyui": "^5.0.35",
+    "tailwindcss": "^3.4.17"
   }
 }
